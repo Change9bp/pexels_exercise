@@ -1,0 +1,121 @@
+/*NAVBAR*/
+header {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+/*HEADER*/
+
+nav + div {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#searchDiv {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+  opacity: 0.6;
+}
+
+#searchDiv:hover {
+  opacity: 1;
+}
+
+#searchDiv button {
+  padding: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+#searchDiv button:hover {
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+
+#search {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 70px;
+}
+
+/*MAIN SECTION */
+
+main > h2 {
+  margin: 1rem;
+}
+.container {
+  display: flex;
+}
+.row.g-3 {
+  flex-direction: column;
+  margin: 0;
+  width: 33%;
+}
+
+/* CARD */
+
+.card {
+  position: relative;
+  max-height: 650px;
+}
+
+.card .d-flex.justify-content-end {
+  transition: all 1s;
+  opacity: 0;
+  background-color: trasparent;
+  position: absolute;
+  width: 100%;
+}
+
+.card:hover .d-flex.justify-content-end {
+  opacity: 1;
+}
+
+.card .d-flex.justify-content-end button {
+  margin: 8px;
+}
+
+.card button {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.card .d-flex.justify-content-between button:first-child {
+  background-color: black;
+}
+
+.card .d-flex.justify-content-between {
+  transition: all 1s;
+  opacity: 0;
+  background-color: trasparent;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.card:hover .d-flex.justify-content-between {
+  opacity: 1;
+}
+.card .d-flex.justify-content-between a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
